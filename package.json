@@ -2,12 +2,14 @@
   "name": "38-hw-react-wars",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://VladimirRogalev.github.io/War-Card-Game",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "dependencies": {
     "bootstrap": "^5.3.3",
@@ -19,6 +21,7 @@
     "@types/react": "^18.2.66",
     "@types/react-dom": "^18.2.22",
     "@vitejs/plugin-react": "^4.2.1",
+    "gh-pages": "6.1.1",
     "vite": "^5.2.0"
   }
 }

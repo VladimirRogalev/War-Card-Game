@@ -11,9 +11,9 @@ const Start = ({changePage, changeName}) => {
     };
     console.log('render start');
     return (
-        <div className="container text-center my-5">
+        <div className="container text-center my-5 rounded">
             <div className="row">
-                <div className="col-lg-6 col-md-8 mx-auto  border border-primary bg-light">
+                <div className="col-lg-6 col-md-8 mx-auto  border border-primary bg-light rounded-5">
                     <h1 className="fw-bolder">Ready For War!</h1>
                     <p><input
                         value={name}

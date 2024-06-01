@@ -62,19 +62,19 @@ const Game = ({changePage, name, updateGameResult}) => {
     return (
 
 
-            <div className="container  text-center my-5 fw-medium ">
-                <div className="row">
-                    <div className="col-lg-6 col-md-4 mx-auto  border border-primary bg-light">
-                        <h2>Comp</h2>
-                        <div className="card-container comp-deck">{renderCard(compCard)}</div>
-                        <div className="card-container mt-4 player-deck">{renderCard(playerCard)}</div>
-                        <h2>{name}</h2>
-                        <button className="btn btn-primary my-2" onClick={handleClickNext}>
-                            NEXT
-                        </button>
-                    </div>
+        <div className="container  text-center my-5 fw-medium ">
+            <div className="row">
+                <div className="col-lg-6 col-md-4 mx-auto  border border-primary bg-light rounded-5">
+                    <h2>Computer</h2>
+                    <div className="card-container comp-deck">{renderCard(compCard)}</div>
+                    <div className="card-container mt-4 player-deck">{renderCard(playerCard)}</div>
+                    <h2>{name}</h2>
+                    <button className="btn btn-primary my-2" onClick={handleClickNext}>
+                        NEXT
+                    </button>
                 </div>
             </div>
+        </div>
 
     );
 };
